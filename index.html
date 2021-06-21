@@ -1,18 +1,52 @@
 <!DOCTYPE html>
-
 <html lang="fr">
+
     <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script src="https://kit.fontawesome.com/9c3c1d2eee.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">
+        <title>Reservia</title>
     </head>
+
 <body>
     
     <!-- Header -->
+
     <header>
+        <nav>
+            <a href="#"><img src="./images/logo/Reservia.svg" alt="Logo Reservia"/></a>
+            <ul>
+                <li><a href="#" class="couleur_hbrgmt">Hébérgements</a></li>
+                <li><a href="#" class="couleur_act">Activités</a></li>
+                <li><a href="#" class="couleur_inscr"><strong>S'inscrire</strong></a></li>
+            </ul>
+        </nav>
     </header>
+
+    <!-- Sous-header -->
+
+    <h1>Trouvez votre hébérgement pour des vacances de rêve</h1>
+    <p>En plein centre ville ou en pleine nature</p> <br />
+    <form class="post" action="traitement.php">
+        <label class="localisation">
+            <i class="fas fa-map-marker-alt"></i>
+        </label>
+    <input id="recherche" type="search" placeholder="Marseille, France" name="recherche">
+    <button class="logo_recherche" type="submit">
+        <span>Rechercher</span>
+    </button>
+    </form>
+
 
     <!-- Section 1 Hébergement à Marseille-->
     
     <section id="hebergement">
-        <div class="container">
+        <div class="boite">
             <div class="logements">
             <h2 class="titre">Hébergements à Marseille</h2>
                 <article class="article_1">
