@@ -4,7 +4,7 @@ body {
     margin-left: 40px;
 }
 
-/* Header */
+                                    /* Header */
 
 nav {
     display: flex;
@@ -15,6 +15,11 @@ nav {
 nav ul {
     display: flex;
     list-style: none;
+}
+
+nav ul :hover {
+    text-decoration: underline;
+    color: #0065FC;
 }
 
 nav li a {
@@ -39,7 +44,7 @@ a {
     font-weight: bold;
 }
 
-/* Sous-header*/
+                                /* Sous-header*/
 
 h1 {
     font-weight: bold;
@@ -51,14 +56,177 @@ p {
 }
 
 .localisation {
-    padding: 12px;
-    border-radius: 14px;
-    border-width: 10px #f2f2f2;
+    height: 47px;
+    padding: 14px;
+    text-align: center;
+    border-radius: 15px 0px 0px 15px;
     background-color:#F2F2F2;
+    height: 47px;
 }
 
 #recherche {
-    padding: 12px 16px;
-    border: #F2F2F2;
-    background-color: white;
+    font-family: "raleway", sans-serif;
+    font-weight: bold;
+    padding: 9px 16px;
+    border: 2px #F2F2F2 solid;
+    border-left: none;
+    height: 47px;
+}
+
+::placeholder {
+    color: black;
+    font-weight: bold;
+}
+
+.logo_recherche {
+    width: 120px;
+    font-family: "raleway", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    border: 2px #0065FC solid;
+    height: 47px;
+    margin-left: -5px;
+    border-radius: 0px 15px 15px 0px;
+    border-left: none;
+    background-color: #0065FC;
+    color: white;
+    cursor: pointer;
+}
+
+.logo_recherche :hover {
+    color: black;
+}
+
+                                /* Filtres */
+
+#filtres {
+    display: flex;
+    flex-direction: row;
+}
+
+.titre_filtre {
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+}
+
+.categories {
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 0px 0px 50px;
+    border: #F2F2F2 solid 2px;
+    border-radius: 30px 30px 30px 30px;
+    padding: -14px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#money {
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    margin-left: -12px;
+    cursor: pointer;
+}
+
+.eco {
+    display: flex;
+    justify-content: center;
+    padding: 0px 10px 0px 10px;
+    cursor: pointer;
+}
+
+.eco :hover {
+    color: #0065FC
+}
+
+#child {
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    margin-left: -12px;
+    cursor: pointer;
+}
+
+.family {
+    display: flex;
+    justify-content: center;
+    padding: 0px 10px 0px 10px;
+    cursor: pointer;
+}
+
+.family :hover {
+    color:#0065FC
+}
+
+#love {
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    margin-left: -12px;
+    cursor: pointer;
+}
+
+.romantique {
+    display: flex;
+    justify-content: center;
+    padding: 0px 10px 0px 10px;
+    cursor: pointer;
+}
+
+.romantique :hover {
+    color: #0065FC;
+}
+
+#pets {
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    margin-left: -12px;
+    cursor: pointer;
+}
+
+.animals {
+    display: flex;
+    justify-content: center;
+    padding: 0px 10px 0px 10px;
+    cursor: pointer;
+}
+
+.animals :hover {
+    color: #0065FC;
+}
+
+                                /* Infos */
+
+#dispo {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.logo_info {
+    color: #0065FC;
+    border: solid 2px #F2F2F2;
+    border-radius: 50px;
+    margin-right: 10px;
+    padding: 5px;
+    width: 18px;
+    text-align: center;
+    cursor: pointer;
 }
