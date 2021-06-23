@@ -2,6 +2,8 @@ body {
     font-family: "Raleway", sans-serif;
     margin-top: 30px;
     margin-left: 40px;
+    min-width: 250px;
+    max-width: 1400px;
 }
 
                                     /* Header */
@@ -56,12 +58,11 @@ p {
 }
 
 .localisation {
-    height: 47px;
+    height: 2.9rem;
     padding: 14px;
     text-align: center;
     border-radius: 15px 0px 0px 15px;
     background-color:#F2F2F2;
-    height: 47px;
 }
 
 #recherche {
@@ -70,7 +71,8 @@ p {
     padding: 9px 16px;
     border: 2px #F2F2F2 solid;
     border-left: none;
-    height: 47px;
+    border-right: none;
+    height: 2.9rem;
 }
 
 ::placeholder {
@@ -79,13 +81,12 @@ p {
 }
 
 .logo_recherche {
-    width: 120px;
+    width: 7rem;
     font-family: "raleway", sans-serif;
     font-weight: bold;
     font-size: 16px;
     border: 2px #0065FC solid;
-    height: 47px;
-    margin-left: -5px;
+    height: 2.9rem;
     border-radius: 0px 15px 15px 0px;
     border-left: none;
     background-color: #0065FC;
@@ -103,13 +104,13 @@ p {
     display: flex;
     flex-direction: row;
 }
-
+                                
 .titre_filtre {
     font-weight: bold;
     display: flex;
     flex-direction: row;
 }
-
+                                
 .categories {
     font-weight: bold;
     display: flex;
@@ -123,7 +124,7 @@ p {
     justify-content: center;
     cursor: pointer;
 }
-
+                                
 #money {
     color: #0065FC;
     background-color: #DEEBFF;
@@ -134,18 +135,18 @@ p {
     margin-left: -12px;
     cursor: pointer;
 }
-
+                                
 .eco {
     display: flex;
     justify-content: center;
     padding: 0px 10px 0px 10px;
     cursor: pointer;
 }
-
+                                
 .eco :hover {
     color: #0065FC
 }
-
+                                
 #child {
     color: #0065FC;
     background-color: #DEEBFF;
@@ -156,18 +157,18 @@ p {
     margin-left: -12px;
     cursor: pointer;
 }
-
+                                
 .family {
     display: flex;
     justify-content: center;
     padding: 0px 10px 0px 10px;
     cursor: pointer;
 }
-
+                                
 .family :hover {
     color:#0065FC
 }
-
+                                
 #love {
     color: #0065FC;
     background-color: #DEEBFF;
@@ -178,18 +179,18 @@ p {
     margin-left: -12px;
     cursor: pointer;
 }
-
+                                
 .romantique {
     display: flex;
     justify-content: center;
     padding: 0px 10px 0px 10px;
     cursor: pointer;
 }
-
+                                
 .romantique :hover {
     color: #0065FC;
 }
-
+                                
 #pets {
     color: #0065FC;
     background-color: #DEEBFF;
@@ -200,14 +201,14 @@ p {
     margin-left: -12px;
     cursor: pointer;
 }
-
+                                
 .animals {
     display: flex;
     justify-content: center;
     padding: 0px 10px 0px 10px;
     cursor: pointer;
 }
-
+                                
 .animals :hover {
     color: #0065FC;
 }
@@ -228,5 +229,80 @@ p {
     padding: 5px;
     width: 18px;
     text-align: center;
+    cursor: pointer;
+}
+
+                                /* Section 1 Hébérgements à Marseille */
+
+#hebergements {
+    border-radius: 1.5rem;
+    background-color: #F2F2F2;
+    width: 60%;
+    height: 25%;
+    padding: 2rem;
+}
+
+h3 {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+h3:hover {
+    color: #0065FC;
+}
+
+.image_hotel {
+    height: 6rem;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0rem 0rem;
+    cursor: pointer;
+}
+
+.hotels {
+    border: white solid 0.2px;
+    width: 28%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: #0000002e 0px 0px 16px;
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.contenu_article {
+    font-size: 0.8rem;
+    text-align: start;
+    line-height: 0.6rem;
+}
+
+.blue {
+    color: #0065FC;
+    cursor: pointer;
+}
+
+.grey {
+    color: #F2F2F2;
+    cursor: pointer;
+}
+
+.afficher_plus {
+    font-weight: bold;
+    color: black;
+    font-size: 1.02rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.afficher_plus:hover {
+    text-decoration: underline;
+    color: #0065FC;
+}
+
+.titre_hebergement:hover {
+    color: #0065FC;
     cursor: pointer;
 }
