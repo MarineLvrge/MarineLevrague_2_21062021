@@ -1,10 +1,40 @@
 body {
     font-family: "Raleway", sans-serif;
-    margin-top: 30px;
-    margin-left: 40px;
-    min-width: 250px;
-    max-width: 1400px;
+    margin-top: 2%;
+    margin-left: 2%;
+    width: 100%;
+    overflow-x: hidden;
 }
+
+@media all and (max-width: 1024px) {
+
+    body {
+        width: auto;
+        flex-wrap: wrap;
+    }
+
+    nav {
+        width: auto;
+        text-align: left;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .inscription {
+        display: inline-block;
+    }
+
+    #filtres {
+        flex-wrap: wrap;
+    }
+
+    .hotels {
+        flex-direction: column;
+    }
+}
+
 
                                     /* Header */
 
@@ -232,7 +262,15 @@ p {
     cursor: pointer;
 }
 
-                                /* Section 1 Hébérgements à Marseille */
+                                /* Section 1 : Hébérgements à Marseille */
+
+.logements {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 
 #hebergements {
     border-radius: 1.5rem;
@@ -306,3 +344,40 @@ h3:hover {
     color: #0065FC;
     cursor: pointer;
 }
+
+                                /* Section 2 : Les plus populaires */
+
+#populaires {
+    width: 30%;
+    height: 100%;
+    border-radius: 1.5rem;
+    background-color: #F2F2F2;
+}
+
+.image_populaire {
+    width: 8rem;
+    height: 8.9rem;
+    border-radius: 1rem 0rem 0rem 1rem;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    float: left;
+    margin: 0.5rem;
+}
+
+.hotels_popu {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: #0000002e 0px 0px 16px;
+}
+
+.contenu_popu {
+    width: 100%;
+    height: 9.05rem;
+    font-size: 0.8rem;
+    line-height: 1rem;
+}
+    
