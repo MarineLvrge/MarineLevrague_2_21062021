@@ -5,10 +5,10 @@
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <script src="https://kit.fontawesome.com/9c3c1d2eee.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="styles.css"/>
+        <link rel="stylesheet" media="(min-width: 1280px)" href="styles.css"/>
+        <link rel="stylesheet" media="(max-width: 767px)" href="mobile.css"/>
+        <link rel="stylesheet" media="(min-width: 768px) and (max-width: 1279px)" href="tablet.css"/>
         <link rel="preconnect" href="https://fonts.gstatic.com"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">
         <title>Reservia</title>
     </head>
@@ -22,8 +22,8 @@
         <nav>
             <a href="#"><img src="./images/logo/Reservia.svg" alt="Logo Reservia"/></a>
             <ul>
-                <li><a href="#" class="menu_hebergement">Hébérgements</a></li>
-                <li><a href="#" class="menu_activites">Activités</a></li>
+                <li id="menu_hebergement"><a href="#hebergements">Hébérgements</a></li>
+                <li id="menu_activites"><a href="#bloc_activites">Activités</a></li>
 
                 <li><a href="#" class="inscription"><strong>S'inscrire</strong></a></li>
             </ul>
