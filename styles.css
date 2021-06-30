@@ -53,30 +53,34 @@ a {
     font-weight: bold;
 }
 
+#logo {
+    cursor: pointer;
+}
+
                                 /* Sous-header*/
 
 h1 {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1.1rem;
 }
 
 p {
-    font-size: 14px;
+    font-size: 0.8rem;
 }
 
 .localisation {
     height: 2.9rem;
-    padding: 14px;
+    padding: 0.8rem;
     text-align: center;
-    border-radius: 15px 0px 0px 15px;
+    border-radius: 0.9rem 0rem 0rem 0.9rem;
     background-color:#F2F2F2;
 }
 
 #recherche {
     font-family: "raleway", sans-serif;
     font-weight: bold;
-    padding: 9px 16px;
-    border: 2px #F2F2F2 solid;
+    padding: 0.5rem 1rem;
+    border: 0.1rem #F2F2F2 solid;
     border-left: none;
     border-right: none;
     height: 2.9rem;
@@ -91,14 +95,19 @@ p {
     width: 7rem;
     font-family: "raleway", sans-serif;
     font-weight: bold;
-    font-size: 16px;
-    border: 2px #0065FC solid;
-    height: 2.9rem;
-    border-radius: 0px 15px 15px 0px;
+    font-size: 1rem;
+    border: 0.1rem #0065FC solid;
+    height: 3rem;
+    border-radius: 0rem 0.9rem 0.9rem 0rem;
     border-left: none;
     background-color: #0065FC;
     color: white;
     cursor: pointer;
+}
+
+.logo_recherche i {
+	visibility: hidden;
+	width: 0;
 }
 
 .logo_recherche :hover {
@@ -129,9 +138,9 @@ p {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin: 0px 0px 0px 50px;
-    border: #F2F2F2 solid 2px;
-    border-radius: 30px 30px 30px 30px;
+    margin: 0rem 0rem 0rem 3.1rem;
+    border: #F2F2F2 solid 0.1rem;
+    border-radius: 1.8rem 1.8rem 1.8rem 1.8rem;
     padding: -14px;
     justify-content: center;
     cursor: pointer;
@@ -140,10 +149,10 @@ p {
 #money {
     color: #0065FC;
     background-color: #DEEBFF;
-    border-radius: 30px;
+    border-radius: 1.8rem;
     display: flex;
     align-items: center;
-    padding: 14px;
+    padding: 0.8rem;
     margin-left: -12px;
     cursor: pointer;
 }
@@ -151,7 +160,7 @@ p {
 .eco {
     display: flex;
     justify-content: center;
-    padding: 0px 10px 0px 10px;
+    padding: 0rem 0.6rem 0rem 0.6rem;
     cursor: pointer;
 }
                                 
@@ -162,10 +171,10 @@ p {
 #child {
     color: #0065FC;
     background-color: #DEEBFF;
-    border-radius: 30px;
+    border-radius: 1.8rem;
     display: flex;
     align-items: center;
-    padding: 14px;
+    padding: 0.8rem;
     margin-left: -12px;
     cursor: pointer;
 }
@@ -173,7 +182,7 @@ p {
 .family {
     display: flex;
     justify-content: center;
-    padding: 0px 10px 0px 10px;
+    padding: 0rem 0.6rem 0rem 0.6rem;
     cursor: pointer;
 }
                                 
@@ -184,10 +193,10 @@ p {
 #love {
     color: #0065FC;
     background-color: #DEEBFF;
-    border-radius: 30px;
+    border-radius: 1.8rem;
     display: flex;
     align-items: center;
-    padding: 14px;
+    padding: 0.8rem;
     margin-left: -12px;
     cursor: pointer;
 }
@@ -195,7 +204,7 @@ p {
 .romantique {
     display: flex;
     justify-content: center;
-    padding: 0px 10px 0px 10px;
+    padding: 0rem 0.6rem 0rem 0.6rem;
     cursor: pointer;
 }
                                 
@@ -206,10 +215,10 @@ p {
 #pets {
     color: #0065FC;
     background-color: #DEEBFF;
-    border-radius: 30px;
+    border-radius: 1.8rem;
     display: flex;
     align-items: center;
-    padding: 14px;
+    padding: 0.8rem;
     margin-left: -12px;
     cursor: pointer;
 }
@@ -217,7 +226,7 @@ p {
 .animals {
     display: flex;
     justify-content: center;
-    padding: 0px 10px 0px 10px;
+    padding: 0rem 0.6rem 0rem 0.6rem;
     cursor: pointer;
 }
                                 
@@ -235,10 +244,10 @@ p {
 
 .logo_info {
     color: #0065FC;
-    border: solid 2px #F2F2F2;
-    border-radius: 50px;
-    margin-right: 10px;
-    padding: 5px;
+    border: solid 0.1rem #F2F2F2;
+    border-radius: 3.1rem;
+    margin-right: 0.6rem;
+    padding: 0.3rem;
     width: 1.5%;
     text-align: center;
     cursor: pointer;
