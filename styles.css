@@ -3,9 +3,7 @@ body {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
-    margin-right: 0;
-    margin-left: 0;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .bloc_header {
@@ -69,9 +67,7 @@ p {
 }
 
 .localisation {
-    height: 2.9rem;
     padding: 0.8rem;
-    text-align: center;
     border-radius: 0.9rem 0rem 0rem 0.9rem;
     background-color:#F2F2F2;
 }
@@ -92,12 +88,10 @@ p {
 }
 
 .logo_recherche {
-    width: 7rem;
+    width: 6rem;
     font-family: "raleway", sans-serif;
     font-weight: bold;
-    font-size: 1rem;
     border: 0.1rem #0065FC solid;
-    height: 3rem;
     border-radius: 0rem 0.9rem 0.9rem 0rem;
     border-left: none;
     background-color: #0065FC;
@@ -114,35 +108,25 @@ p {
     color: black;
 }
 
-.barre_recherche {
+form {
     display: flex;
-    justify-content: stretch;
 }
 
                                 /* Filtres */
 
 #filtres {
     display: flex;
-    flex-direction: row;
-}
-                                
-.titre_filtre {
-    font-weight: bold;
-    display: flex;
-    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
 }
                                 
 .categories {
     font-weight: bold;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0rem 0rem 0rem 3.1rem;
     border: #F2F2F2 solid 0.1rem;
     border-radius: 1.8rem 1.8rem 1.8rem 1.8rem;
-    padding: -14px;
-    justify-content: center;
+    margin-left: 2rem;
     cursor: pointer;
 }
                                 
@@ -158,8 +142,6 @@ p {
 }
                                 
 .eco {
-    display: flex;
-    justify-content: center;
     padding: 0rem 0.6rem 0rem 0.6rem;
     cursor: pointer;
 }
@@ -180,8 +162,6 @@ p {
 }
                                 
 .family {
-    display: flex;
-    justify-content: center;
     padding: 0rem 0.6rem 0rem 0.6rem;
     cursor: pointer;
 }
@@ -202,8 +182,6 @@ p {
 }
                                 
 .romantique {
-    display: flex;
-    justify-content: center;
     padding: 0rem 0.6rem 0rem 0.6rem;
     cursor: pointer;
 }
@@ -224,8 +202,6 @@ p {
 }
                                 
 .animals {
-    display: flex;
-    justify-content: center;
     padding: 0rem 0.6rem 0rem 0.6rem;
     cursor: pointer;
 }
@@ -256,10 +232,10 @@ p {
                                 /* Section 1 : Hébérgements à Marseille */
 
 .logements {
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: stretch;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -267,10 +243,13 @@ p {
     border-radius: 1.5rem;
     background-color: #F2F2F2;
     width: 60%;
-    height: 25%;
     padding: 1rem;
-    margin: 0.5rem;
-    margin-left: 2%;
+    margin: auto;
+}
+
+.conteneur_hotels {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 h3 {
@@ -294,7 +273,7 @@ h3:hover {
 
 .hotels {
     border: white solid 0.2px;
-    width: 28%;
+    width: 14rem;
     height: 100%;
     border-radius: 20px;
     background-color: white;
@@ -345,9 +324,7 @@ h3:hover {
     height: 36.5rem;
     border-radius: 1.5rem;
     background-color: #F2F2F2;
-    padding: 0rem;
-    margin: 0.5rem;
-    margin-left: 2.5rem;
+    margin: auto;
 }
 
 .bloc_titre {
@@ -411,16 +388,15 @@ h3:hover {
 #bloc_activites {
     width: 100%;
     height: 100%;
-    margin-left: 1.5rem;
-    line-height: 1rem;
     font-size: 0.9rem;
+    padding: 0.8rem;
 }
 
 .toutes_activites {
     display: flex;
     justify-content: space-between;
-    margin-right: 2.5rem;
-    margin-left: 0.6rem;
+    width: 100%;
+    margin: auto;
 }
 
 .activite_large {
@@ -557,4 +533,71 @@ li:hover {
 }
 
 
-                                /* FIN */
+                                /* Fin de la version Desktop */
+
+
+
+
+                                /* Partie Responsive */
+
+@media screen and (max-width: 780px) {
+    
+    body {
+        width: 100%;
+        height: 100%;
+        font-size: 1rem;
+        font-family: "Raleway", sans-serif;
+        overflow-x: hidden;
+        margin: 0;
+    }
+
+     /* Header */
+
+#logo {
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+nav ul {
+    width: 100%;
+    margin: auto;
+    padding: 0;
+}
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+#menu_hebergement, #menu_activites {
+    border-bottom: 0.2rem #F2F2F2 solid;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.inscription {
+    color: #0065FC;
+    position: absolute;
+    top: 1.5rem;
+    right: 0.9rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+#menu_hebergement {
+    border-bottom: 0.2rem #0065FC solid;
+    width: 50%;
+}
+
+#menu_activites {
+    width: 50%;
+}
+
+.bloc_header {
+    margin: auto;
+}
+
+}
