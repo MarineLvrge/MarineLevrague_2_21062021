@@ -56,6 +56,10 @@ a {
     cursor: pointer;
 }
 
+#logo:hover {
+    transform: scale(1.05);
+}
+
                                 /* Sous-header*/
 
 h1 {
@@ -100,6 +104,10 @@ p {
     cursor: pointer;
 }
 
+.logo_recherche:hover {
+    transform: scale(1.05);
+}
+
 .logo_recherche i {
 	visibility: hidden;
 	width: 0;
@@ -130,7 +138,11 @@ form {
     margin-left: 2rem;
     cursor: pointer;
 }
-                                
+
+.categories:hover {
+    transform: scale(1.05);
+}
+
 #money {
     color: #0065FC;
     background-color: #DEEBFF;
@@ -283,6 +295,10 @@ h3:hover {
     padding: 0.5rem;
 }
 
+.hotels:hover {
+    transform: scale(1.05);
+}
+
 .contenu_article {
     font-size: 0.8rem;
     text-align: start;
@@ -358,6 +374,10 @@ h3:hover {
     box-shadow: #0000002e 0px 0px 16px;
 }
 
+.hotels_popu:hover {
+    transform: scale(1.05);
+}
+
 .contenu_popu {
     font-size: 0.9rem;
     width: 100%;
@@ -406,6 +426,10 @@ h3:hover {
     margin-bottom: 6rem;
 }
 
+.activite_large:hover {
+    transform: scale(1.05);
+}
+
 .activite_medium {
     width: 85%;
     height: 85%;
@@ -413,11 +437,19 @@ h3:hover {
     box-shadow: #0000002e 0px 0px 16px;
 }
 
+.activite_medium:hover {
+    transform: scale(1.05);
+}
+
 .activite_small {
     width: 85%;
     height: 88%;
     border-radius: 1rem 1rem 1rem 1rem;
     box-shadow: #0000002e 0px 0px 16px;
+}
+
+.activite_small:hover {
+    transform: scale(1.05);
 }
 
 .image_large {
