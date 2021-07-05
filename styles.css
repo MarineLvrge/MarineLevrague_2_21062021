@@ -612,7 +612,7 @@ nav {
 }
 
                                 /* Sous-header */
-                                
+
 #sous_header {
     padding: 0.8rem 0 0 0;
 }
@@ -786,4 +786,4 @@ form {
 
 }
 
-                                /* Fin du responsive */
+                                /* Fin du responsive inférieur à 768px */
