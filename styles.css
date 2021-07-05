@@ -557,7 +557,7 @@ li:hover {
         margin: 0;
     }
 
-     /* Header */
+                                /* Header */
 
 #logo {
     cursor: pointer;
@@ -612,6 +612,10 @@ nav {
 }
 
                                 /* Sous-header */
+                                
+#sous_header {
+    padding: 0.8rem 0 0 0;
+}
 
 h1 {
     margin-left: 0.5rem;
@@ -642,8 +646,12 @@ form {
     width: 30%;
 }
 
+.titre_filtre {
+    margin-right: 35rem;
+}
+
 #filtres {
-    margin-left: 0.5rem;
+    padding: 0.4rem 0.4rem 0.4rem 0rem;
 }
 
 .categories {
@@ -673,9 +681,13 @@ form {
 #populaires {
     width: 100%;
     border-radius: 0;
-    margin-bottom: 3rem;
-    margin-left: 0;
+    margin-bottom: 1rem;
 }
+
+.titre_populaires {
+    font-size: 1.2rem;
+}
+
 
                                 /* Section 2 : Hébergements à Marseille */
 
@@ -687,10 +699,13 @@ form {
 
 .hotels {
     width: 90%;
+    margin: auto;
+    margin-bottom: 1rem;
 }
 
 .titre_hebergement {
-    margin: 0.5rem;
+    margin-left: 1rem;
+    font-size: 1.2rem;
 }
 
                                 /* Section 3 : Activités à Marseille */
@@ -700,11 +715,17 @@ form {
     width: 100%;
 }
 
+.titre_bloc_activites {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+
 .toutes_activites {
     display: flex;
     flex-direction: column;
     height: auto;
     margin: auto;
+    width: 100%;
 }
 .activite_large {
     width: 90%;
@@ -735,6 +756,11 @@ form {
 
 .iles_frioul {
     margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.fort_pomegues {
+    height: 12.5rem;
 }
 
 .image_large {
@@ -749,6 +775,15 @@ form {
     height: 6rem;
 }
 
+                                    /* Footer */
 
+#bloc_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: auto;
+}
 
 }
+
+                                /* Fin du responsive */
