@@ -652,7 +652,7 @@ nav {
                                 /* Sous-header */
 
 #sous_header {
-    padding: 0.8rem 0 0 0;
+    padding: 1rem 2.5rem 0rem 2.5rem;
 }
 
 h1 {
@@ -689,7 +689,7 @@ form {
 }
 
 #filtres {
-    padding: 0.4rem 0.4rem 0.4rem 0rem;
+    padding: 1rem 1.5rem 0.4rem 1.5rem;
 }
 
 .categories {
