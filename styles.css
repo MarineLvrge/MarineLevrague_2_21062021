@@ -268,6 +268,7 @@ form {
 .conteneur_hotels {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 h3 {
@@ -699,6 +700,10 @@ form {
     margin-left: 0.5rem;
 }
 
+.logements_dispo {
+    margin-left: 0;
+}
+
 .logo_info {
     color: #0065FC;
     border: solid 0.1rem #F2F2F2;
@@ -709,6 +714,10 @@ form {
 }
 
                                 /* Section 1 : Les plus populaires */
+
+.titre_populaires {
+    font-size: 1.2rem;
+}
 
 .logements {
     display: flex;
@@ -842,6 +851,15 @@ body {
     font-family: "Raleway", sans-serif;
     overflow-x: hidden;
     margin: 0;
+}
+
+.logo_info {
+    color: #0065FC;
+    border: solid 0.1rem #F2F2F2;
+    border-radius: 5rem 5rem 5rem 5rem;
+    width: 2%;
+    text-align: center;
+    cursor: pointer;
 }
 
                                 /* Section 1 : Hébergements à Marseille */
