@@ -243,11 +243,12 @@ form {
 .logo_info {
     color: #0065FC;
     border: solid 0.1rem #F2F2F2;
-    border-radius: 3.1rem;
+    border-radius: 5rem;
     margin-right: 0.6rem;
-    padding: 0.3rem;
-    width: 1.5%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
     cursor: pointer;
 }
 
@@ -259,6 +260,14 @@ form {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+.titre_hebergement {
+    margin-left: 2rem;
 }
 
 #hebergements {
@@ -330,6 +339,7 @@ h3:hover {
     color: black;
     font-size: 1.02rem;
     margin-top: 2rem;
+    margin-left: 2rem;
     cursor: pointer;
 }
 
@@ -416,82 +426,119 @@ h3:hover {
                                 /* Section 3 : Activités à Marseille */
 
 #bloc_activites {
-    width: 100%;
-    margin: auto;
-    height: 40.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
 }
 
 .toutes_activites {
-    width: 100%;
     display: flex;
+    justify-content: space-between;
+    height: 50%;
 }
 
 .activite_marseille {
-    width: 22%;
-    height: 29rem;
-    margin: auto;
+    flex-grow: 1;
+    height: 100%;
+    width: 24%;
     border-radius: 1rem 1rem 1rem 1rem;
     box-shadow: #0000002e 0px 0px 16px;
+    margin-right: 2rem;
+}
+
+.activite_marseille:hover {
+    transform: scale(1.05);
 }
 
 .bloc_pomegues_frioul {
-    width: 22%;
-    height: 29rem;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24%;
+    margin-right: 2rem;
+}
+
+.bloc_nd_longchamp {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24%;
+}
+
+.fort_pomegues:not(:last-child) { 
+    margin-bottom: 1rem;
+}
+
+.iles_frioul {
+    flex-grow: 1;
     border-radius: 1rem 1rem 1rem 1rem;
     box-shadow: #0000002e 0px 0px 16px;
 }
 
-.bloc_nd_longchamp {
-    width: 22%;
-    height: 29rem;
-    margin: auto;
+.iles_frioul:hover {
+    transform: scale(1.05);
+}
+
+.notre_dame:not(:last-child) { 
+    margin-bottom: 1rem;
+}
+
+.notre_dame {
     border-radius: 1rem 1rem 1rem 1rem;
     box-shadow: #0000002e 0px 0px 16px;
+}
+
+.notre_dame:hover {
+    transform: scale(1.05);
+}
+
+.longchamp {
+    flex-grow: 1;
+    border-radius: 1rem 1rem 1rem 1rem;
+    box-shadow: #0000002e 0px 0px 16px;
+}
+
+.longchamp:hover {
+    transform: scale(1.05);
+}
+
+.fort_pomegues {
+    border-radius: 1rem 1rem 1rem 1rem;
+    box-shadow: #0000002e 0px 0px 16px;
+}
+
+.fort_pomegues:hover {
+    transform: scale(1.05);
 }
 
 .image_large {
     width: 100%;
-    height: 25rem;
     object-fit: cover;
+    height: 30rem;
     border-radius: 1rem 1rem 0rem 0rem;
     cursor: pointer;
 }
 
 .image_medium {
     width: 100%;
-    height: 7.25rem;
     object-fit: cover;
+    height: 15rem;
     border-radius: 1rem 1rem 0rem 0rem;
     cursor: pointer;
 }
 
 .image_small {
     width: 100%;
-    height: 7.25rem;
     object-fit: cover;
+    height: 10rem;
     border-radius: 1rem 1rem 0rem 0rem;
     cursor: pointer;
 }
 
-.fort_pomegues {
-    height: 14.5rem;
+.titre_activite {
+    margin-left: 1rem;
 }
-
-.iles_frioul {
-    height: 14.5rem;
-}
-
-
-
-
-
-
-
-
-
-
-
 
                                 /* Footer */
 
@@ -632,6 +679,7 @@ form {
     background-color: #0065FC;
     color: white;
     cursor: pointer;
+    margin-left: -1rem;
 }
 
 .logo_recherche span {
@@ -657,7 +705,7 @@ form {
 }
 
 #dispo {
-    margin-left: 0.5rem;
+    margin-left: 1rem;
 }
 
 .logements_dispo {
@@ -714,71 +762,57 @@ form {
     font-size: 1.2rem;
 }
 
+.contenu_article {
+    margin-left: 0.5rem;
+}
+
+p {
+    margin-left: 0;
+}
+
+.afficher_plus {
+    margin-left: 1rem;
+}
+
                                 /* Section 3 : Activités à Marseille */
 
+
 #bloc_activites {
-    padding: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.toutes_activites {
+    flex-wrap: wrap;
+}
+
+.activite_marseille {
     width: 100%;
+    margin: auto;
+}
+
+.bloc_pomegues_frioul {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.bloc_nd_longchamp {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.image_small, .image_medium, .image_large {
+    height: 6rem;
 }
 
 .titre_bloc_activites {
     font-size: 1.2rem;
-    margin-left: 1rem;
 }
 
-.toutes_activites {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    margin: auto;
-    width: 100%;
-}
-.activite_large {
-    width: 90%;
-    margin: auto;
-    height: 10rem;
-}
-
-.activite_medium {
-    width: 90%;
-    margin: auto;
-    height: 10rem;
-}
-.activite_small {
-    width: 90%;
-    margin: auto;
-    height: 10rem;
-}
-
-.longchamp {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.notre_dame {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.iles_frioul {
-    margin-bottom: 1.5rem;
-    width: 100%;
-}
-
-.fort_pomegues {
-    height: 12.5rem;
-}
-
-.image_large {
-    height: 6rem;
-}
-
-.image_medium {
-    height: 6rem;
-}
-
-.image_small {
-    height: 6rem;
+.titre_activite {
+    font-size: 1rem;
 }
 
                                     /* Footer */
@@ -816,9 +850,7 @@ body {
 .logo_info {
     color: #0065FC;
     border: solid 0.1rem #F2F2F2;
-    border-radius: 5rem 5rem 5rem 5rem;
-    width: 2%;
-    text-align: center;
+    border-radius: 5rem;
     cursor: pointer;
 }
 
@@ -859,51 +891,28 @@ body {
 
 #bloc_activites {
     width: 100%;
+    margin-left: 1rem;
 }
 
 .toutes_activites {
-    display: flex;
+    flex-wrap: wrap;
 }
 
-.activite_large {
-    width: 60%;
-    height: 25rem;
-    margin: 0;
+.activite_marseille:nth-child(3) {
+        order: 4;
 }
 
-.image_large {
-    width: 100%;
-    height: 20.5rem;
+.activite_marseille:nth-child(3) {
+    order: 3;
 }
 
-.activite_medium{
-    width: 70%;
+.bloc_nd_longchamp {
+    margin-right: 2rem;
+    margin-bottom: 1rem;
 }
 
-.image_medium {
-    width: 100%;
-}
-
-.activite_small {
-    width: 70%;
-}
-
-.image_small {
-    width: 100%;
-}
-
-.iles_frioul {
-    height: 8.5rem;
-    line-height: 0.5;
-}
-
-.longchamp {
-    height: 14rem;
-    line-height: 0.5;
-}
-
-.notre_dame {
-    line-height: 1;
+.bloc_pomegues_frioul {
+    margin-bottom: 1rem;
 }
 
                                 /* Footer */
@@ -933,3 +942,43 @@ body {
 }
 
                                 /* Fin du responsive entre 769px et 1280px */
+
+
+                                /* Responsive écrans supérieurs à 2700px */
+
+@media screen and (min-width: 1707px) and (max-width: 2700px) {
+
+    html, body {
+        width: 100%;
+        overflow-x:hidden;
+    }
+    
+    body {
+        width: 100%;
+        height: 100%;
+        font-size: 1rem;
+        font-family: "Raleway", sans-serif;
+        overflow-x: hidden;
+        margin: 0;
+    }
+
+    #hebergements {
+        max-width: 60%;
+    }
+
+    .logements {
+        width: 100%;
+    }
+
+    .conteneur_hotels {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .hotels {
+        width: 30%;
+    }
+}
+
+                                /******************* FIN *******************/
